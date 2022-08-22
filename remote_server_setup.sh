@@ -1,9 +1,5 @@
 #!bash
 
-#mkdir ml
-# cd ml
-# git clone https://github.com/qunash/cir-ru-t5
-# cd cir-ru-t5
 yes | sudo apt install python3-pip
 pip install transformers
 pip install datasets
