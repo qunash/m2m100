@@ -4,7 +4,8 @@ def translate(text, src_lang="zu_Latn", tgt_lang="rus_Cyrl"):
 
     model_path = "anzorq/nllb_ru-kbd_44K_"
 
-    tokenizer = AutoTokenizer.from_pretrained(model_path, src_lang=src_lang)
+    # tokenizer = AutoTokenizer.from_pretrained(model_path, src_lang=src_lang)
+    tokenizer = AutoTokenizer.from_pretrained("facebook/nllb-200-distilled-600M", src_lang=src_lang)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_path)
 
     inputs = tokenizer(text, return_tensors="pt")
