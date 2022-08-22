@@ -1,4 +1,4 @@
-def translate(text, model_path = "anzorq/nllb_ru-kbd_44K_", src_lang="zu_Latn", tgt_lang="rus_Cyrl"):
+def translate(text, model_path = "anzorq/nllb_ru-kbd_44K_", src_lang="zul_Latn", tgt_lang="rus_Cyrl"):
 
     from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
