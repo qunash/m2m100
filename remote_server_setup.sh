@@ -27,4 +27,6 @@ pip install sentencepiece
 pip install sacrebleu
 pip install accelerate # for auto_find_batch_size to work: https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments.auto_find_batch_size
 
+pip install gpustat
+
 sudo reboot
